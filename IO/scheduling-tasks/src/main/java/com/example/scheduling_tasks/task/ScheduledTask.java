@@ -15,7 +15,7 @@ public class ScheduledTask {
 
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 5000) // Define cuando se ejecuta un metodo determinado
     public void reportCurrentTime() {
         LOGGER.info("The time is now {}", SIMPLE_DATE_FORMAT.format(new Date()));
     }
